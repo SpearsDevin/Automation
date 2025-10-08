@@ -3,14 +3,14 @@ import subprocess
 import webbrowser
 
 def button1_clicked():
-    subprocess.Popen("C:/Users/devin/AppData/Local/Programs/Microsoft VS Code/Code.exe")
-    subprocess.Popen("C:/Users/devin/AppData/Local/Discord/Update.exe --processStart Discord.exe")
-    subprocess.Popen("C:/Users/devin/AppData/Roaming/Spotify/Spotify.exe")
+    subprocess.Popen("C:/Users/%UserProfile%/AppData/Local/Programs/Microsoft VS Code/Code.exe")
+    subprocess.Popen("C:/Users/%UserProfile%/AppData/Local/Discord/Update.exe --processStart Discord.exe")
+    subprocess.Popen("C:/Users/%UserProfile%/AppData/Roaming/Spotify/Spotify.exe")
     webbrowser.open("https://dev.to/")
     webbrowser.open("https://stackoverflow.com/")
 def button2_clicked():
-    subprocess.Popen("C:/Users/devin/AppData/Local/Discord/Update.exe --processStart Discord.exe")
-    subprocess.Popen("C:/Users/devin/AppData/Roaming/Spotify/Spotify.exe")
+    subprocess.Popen("C:/Users/%UserProfile%/AppData/Local/Discord/Update.exe --processStart Discord.exe")
+    subprocess.Popen("C:/Users/%UserProfile%/AppData/Roaming/Spotify/Spotify.exe")
     webbrowser.open("https://www.owlbear.rodeo/game/tvl-EDmdF")
     webbrowser.open("https://www.dndbeyond.com/characters/63633483")
 
@@ -38,4 +38,5 @@ button2.grid(row=0, column=1, padx=10, pady=10)
 
 #button4 = tk.Button(root, text="",height=5, width=20,bd=0, command=button4_clicked, bg='white') # set the background color of the button
 #button4.grid(row=1, column=1, padx=10, pady=10)
+
 root.mainloop()
